@@ -3,8 +3,16 @@
 <head>
   <title>Todo List</title>
   <style>
-    body {
+    body body {
       font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+  .container {
+    text-align: center;
     }
     
     #todo-form {
@@ -32,14 +40,16 @@
   </style>
 </head>
 <body>
-  <h1>Todo List</h1>
+  <div class="container">
+    <h1>Todo List</h1>
   
-  <form id="todo-form">
-    <input type="text" id="todo-input" placeholder="Enter a task" />
-    <button type="button" onclick="addTodo()">Add</button>
-  </form>
-  
-  <ul id="todo-list"></ul>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Enter a task" />
+      <button type="button" onclick="addTodo()">Add</button>
+    </form>
+    
+    <ul id="todo-list"></ul>
+  </div>
   
   <script>
     function addTodo() {
